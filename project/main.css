@@ -2,10 +2,10 @@
 
 
 
-
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 a:link {
@@ -40,9 +40,27 @@ header {
     border-bottom: 1px solid rgba(254, 200, 11, 1);
 }
 
-.up-header__logo img {
-    width: 346px;
+.up-header__logo {
+    width: 360px;
     height: 44px;
+}
+.up-header__logo a {
+    display: flex;
+    align-items: center;
+}
+.up-header__logo :nth-child(1) {
+    margin-right: 10px;
+}
+.up-header__logo p {
+    padding-left: 8px;
+    width: 175px;
+    height: 30px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(0, 0, 0, 1);
+
 }
 .up-header__contacts {
     display: flex;
@@ -155,7 +173,7 @@ header {
     height: 36px;
     border-radius: 40px;
     border: 1px solid rgba(254, 200, 11, 1);
-
+    
 }
 .dowp-header__search button {
     position: absolute;
@@ -163,13 +181,199 @@ header {
     right: 12px;
     border: none;
     background-color: rgba(255, 255, 255);
-    font-size: 28px;
+    font-size: 26px;
 }
 .dowp-header__panel a {
     cursor: pointer;
     margin-left: 16px;
 }
 .dowp-header__panel img {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    max-width: 1440px;
+    width: 100%;
+    height: 566px;
+    background-image: url(./image/fon_about.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+.banner__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 820px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    padding-left: 60px;
+}
+.banner__info h2 {
+    max-width: 454px;
+    width: 100%;
+    font-family: "Fira Sans", serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+}
+.banner__info p {
+    max-width: 454px;
+    margin-top: 16px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+}
+.banner__buttom {
+    margin-top: 56px;
+    max-width: 454px;
+    display: flex;
+}
+.banner__buttom :nth-child(1) {
+    width: 185px;
+    height: 44px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(254, 200, 11, 1);
+}
+.banner__buttom :nth-child(2) {
+    margin-left: 16px;
+    width: 185px;
+    height: 44px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    border: 2px solid rgba(254, 200, 11, 1);
+    background-color: transparent;
+}
+.banner__buttom :nth-child(2):hover {
+    background-color: rgba(254, 200, 11, 1);
+    color: rgba(0, 0, 0, 1);
+    
+}
+@media (max-width: 1200px) {
+    .up-header {
+        padding: 2px 24px;
+    }
+    .dowp-header {
+        padding: 16px 24px;
+    }
+    .banner__info {
+        padding-left: 24px;
+    }
+}
+@media (max-width: 1122px) {
+    .dowp-header__navigations-panels {
+        display: none;
+    }
+    .up-header {
+        padding: 2px 24px;
+    }
+    .dowp-header {
+        padding: 16px 24px;
+    }
+    .banner__info {
+        padding-left: 24px;
+    }
+    .up-header__logo {
+        width: 159px;
+    }
+    .up-header__logo :nth-child(2) {
+        display: none;
+    }
+    .up-header__logo :nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width: 870px) {
+    .up-header__opening-hours :nth-child(1) {
+        display: none;
+    }
+    .up-header__opening-hours {
+        width: 161px;
+        height: 36px;
+    }
+}
+@media (max-width: 761px) {
+    .up-header__opening-hours {
+        display: none;
+    }
+}
+@media (max-width: 621px) {
+    .up-header {
+        max-height: 62px;
+    }
+    .up-header__logo :nth-child(1) {
+        width: 138px;
+        height: 38px;
+    }
+    .up-header__connection img {
+        width: 42px;
+        height: 42px;
+    }
+    .dowp-header {
+        max-height: 62px;
+        padding: 16px 10px;
+    }
+    .dowp-header__panel a {
+        margin-left: 8px;
+    }
+
+    .dowp-header__search {
+        display: none;
+    }
+    .up-header__phone-numbers {
+        display: none;
+    }
+}
+@media (max-width: 432px) {
+    .banner__buttom {
+        flex-direction: column;
+    }
+    .banner__buttom :nth-child(2) {
+        margin: 6px 0px 0px 0px;
+    }
+}
+@media (max-width: 351px) {
+    .banner__info p {
+        display: none;
+    }
+    .banner__info {
+        justify-content: start;
+        padding-top: 30px;
+        max-width: 340px;
+    }
+    .banner__info h2 {
+        max-width: 288px;
+        width: 100%;
+        font-family: "Fira Sans", serif;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 38.4px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .banner {
+        max-width: 340px;
+        width: 100%;
+        height: 320px;
 }
