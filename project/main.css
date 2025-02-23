@@ -566,10 +566,499 @@ main {
     color: rgba(0, 0, 0, 1);
 }
 
+.products {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    padding: 56px 60px;
+    background-color: rgb(249, 249, 249);
+}
+.products__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products__title h2 {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.products__lines {
+    display: flex;
+    align-items: center;
+}
+.products__lines span {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(161, 161, 161, 1);
+    margin-right: 13px;
+}
+.products__lines button {
+    width: 39px;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.products__lines i {
+    font-size: 24px;
+}
+.products__lines button:hover {
+    background-color: rgba(254, 200, 11, 1);
+}
+.products__cells {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.products__block {
+    width: 312px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    padding-bottom: 16px;    
+}
+.products__block h3 {
+    height: 66px;
+    margin: 16px 12px 14px 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: rgba(0, 0, 0, 1);
+}
+.products__block span {
+    margin-left: 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.products__cell__info {
+    width: 308px;
+    height: 260px;
+    position: relative;
+}
+.products__cell__info img {
+    width: 100%;
+    height: 100%;
+}
+.products__cell__actual {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+}
+.products__cell__actual i {
+    font-size: 30px;
+}
+.products__cell__actual img {
+    width: 79px;
+    height: 19px;
+}
+.products__cell__actions {
+    margin-top: 11px;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products__cell__actions button {
+    width: 146px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: rgba(254, 200, 11, 1);
+    border: none;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(0, 0, 0, 1);
+}
+.products__cell__actions a {
+    width: 122px;
+    height: 24px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.products__cell__actions p {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(161, 161, 161, 1);
+}
+.products__cell__actions i {
+    margin-bottom: 3px;
+    font-size: 15px;
+    border-bottom: 2px solid;
+    color: rgba(161, 161, 161, 1);
+}
 
+
+.news {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    padding: 123px 60px 143px 60px;
+}
+.news__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news__title h2 {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.news__lines {
+    display: flex;
+    align-items: center;
+}
+.news__lines span {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(161, 161, 161, 1);
+    margin-right: 13px;
+}
+.news__lines button {
+    width: 39px;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.news__lines i {
+    font-size: 24px;
+}
+.news__lines button:hover {
+    background-color: rgba(254, 200, 11, 1);
+}
+.news__blocks {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.news__block {
+    width: 312px;
+    height: 361px;
+}
+.news__block img {
+    width: 100%;
+    height: 203px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.news__block p {
+    margin-top: 16px;
+    margin-left: 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(0, 0, 0, 1);
+}
+.news__block h3 {
+    padding: 4px 14px 35px 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:19.8px;
+    color: rgba(0, 0, 0, 1);
+}
+.news__block a {
+    margin-left: 11px;
+    color: rgba(161, 161, 161, 1);   
+}
+.news__block a:hover {
+    color: rgba(254, 200, 11, 1);   
+}
+.news__block span {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:19.8px;
+    margin-right: 16px;
+}
+.news__car-brands {
+    margin-top: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+.news__car-brands img {
+    max-width: 149px;
+    height: auto;
+}
+.news__car-brands :nth-child(3) {
+    height: 40px;
+}
+.news__car-brands :nth-child(2n) {
+    width: 101.13px;
+}
+.news__car-brands :nth-child(6) {
+    height: 84.27px;
+}
+
+.feedback {
+    display: flex;
+    max-width: 1440px;
+    max-height: 338px;
+    width: 100%;
+    padding-left: 60px;
+    background-color: rgba(242, 242, 242, 1);
+}
+.feedback__panel {
+    max-width: 895px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback__panel h2 {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height:50.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.feedback__panel p {
+    margin-top: 4px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.feedback__image {
+    position: relative;
+    max-width: 485px;
+    height: 338px;
+}
+.feedback__image img {
+    width: 485px;
+    height: 372px;
+    position: absolute;
+    top: -35px;
+    left: 84px;
+}
+.feedback__panel span {
+    margin-top: 18px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(114, 114, 114, 1);
+}
+.feedback__input-field {
+    margin-top: 38px;
+    display: flex;
+    align-items: end;
+}
+.feedback__input-name {
+    display: flex;
+    flex-direction: column;
+}
+.feedback__input-name span {
+    margin-bottom: 4px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.feedback__input-name input {
+    width: 294px;
+    height: 44px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(0, 0, 0, 1);
+    padding: 11px 13px;
+    border-radius: 4px;
+    border: 1px solid rgba(114, 114, 114, 1);
+    outline: none;
+}
+.feedback__input-number {
+    margin: 0px 19px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback__input-number span {
+    margin-bottom: 4px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.feedback__input-number input {
+    width: 294px;
+    height: 44px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(0, 0, 0, 1);
+    padding: 11px 13px;
+    border-radius: 4px;
+    border: 1px solid rgba(114, 114, 114, 1);
+    outline: none;
+}
+.feedback__input-field button {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    border-radius: 4px;
+    width: 185px;
+    height: 44px;
+    background-color: rgba(254, 200, 11, 1);
+}
+.feedback__input-field button:hover {
+    background-color: rgba(255, 212, 58, 1);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    max-width: 1440px;
+    width: 100%;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 63px 60px 42px 60px;
+}
+
+.info__top {
+    display: flex;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(102, 102, 102);
+}
+.info__contact-information {
+    width: 671px;
+}
+.info__contact-information p {
+    margin-top: 8px;
+}
+.info__contact-information :nth-child(1) {
+    margin-top: 0px;
+}
+.info__contact-information button {
+    margin-top: 16px;
+    width: 184px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(254, 200, 11, 1);
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(0, 0, 0, 1);
+}
+.info__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 696px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(102, 102, 102);
+}
+.info__content p {
+    margin-bottom: 3px;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(102, 102, 102);
+}
+.info__content li {
+    margin-top: 13px;
+    list-style-type: none;
+}
+.info__bottom {
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.info__social {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: rgba(102, 102, 102);
+    width: 646px;
+}
+.info__social :nth-child(3) {
+    margin-top: 20px;
+}
+.info__social p {
+    width: 424px;
+}
+.info__links {
+    width: 200px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1442px) {
+    .feedback__image {
+        display: none;
+    }
+    .feedback__panel {
+        margin-bottom: 63px;
+    }
+}
 @media (max-width: 1388px) {
     .categories {
         padding: 80px 23px 0px 23px;
+    }
+    .products {
+        padding: 56px 23px;
+    }
+    .news {
+        padding: 123px 23px 143px 23px;
+    }
+    .feedback {
+        padding: 0px 23px;
+    }
+    .info {
+        padding: 63px 23px 42px 23px;
     }
 }
 @media (max-width: 1320px) {
@@ -605,6 +1094,51 @@ main {
     .achievements {
         margin-top: 0px;
     }
+    .production__about {
+        display: none;
+    }
+    .products__cells {
+        justify-content: space-around;
+    }
+    .products__block {
+        width: 228px;
+        height: 385px;
+        padding-bottom: 14px;   
+    }
+    .products__cell__info {
+        width: 224px;
+        height: 189px;
+    }
+    .products__cell__actions {
+        margin-top: 12px;
+        padding: 0px 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .products__block h3 {
+        height: 42px;
+        margin: 12px 10px;
+        font-size: 16px;
+        line-height: 20.8px;
+        text-align: center;
+    }
+    .products__block span {
+        display: flex;
+        justify-content: center;
+    }
+    .products__cell__actions button {
+        width: 204px;
+    }
+    .news__block {
+        width: 228px;
+        height: 315px;
+    }
+    .news__block img {
+        height: 148px;
+    }
+    .news__block h3 {
+        padding: 4px 12px 24px 12px;
+    }
 }
 @media (max-width: 1200px) {
     .up-header {
@@ -615,6 +1149,10 @@ main {
     }
     .banner__info {
         padding-left: 24px;
+    }
+    .news__car-brands {
+        max-width: 1200px;
+        overflow-x: hidden;
     }
 }
 @media (max-width: 1122px) {
@@ -653,6 +1191,12 @@ main {
         font-size: 16px;
         line-height: 20.8px;
     }
+    .products__cells > :nth-child(4) {
+        display: none;
+    }
+    .news__blocks > :nth-child(4) {
+        display: none;
+    }
 }
 
 
@@ -664,16 +1208,105 @@ main {
         width: 161px;
         height: 36px;
     }
+   
+    .production__presentation{
+        display: flex;
+        flex-direction: column;
+    }
+    .production__paragraph a {
+        position: unset;
+        margin-left: 46px;
+        margin-top: 32px;
+    }
+    .production__paragraph {
+        display: flex;
+        flex-direction: column;
+    }
+    .production__paragraph p {
+        width: 479px;
+    }
+    .production {
+        padding-bottom: 89px;
+    }
+    .products__cells {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 860px) {
+    .feedback__input-field {
+        margin-top: 32px;
+    }
+    .feedback__input-name input {
+        width: 270px;
+    }
+    .feedback__input-number input {
+        width: 270px;
+    }
+    .feedback__input-field button {
+        width: 140px;
+    }
+
+}
+
+@media (max-width: 810px) {
+    .info {
+        height: 714px;
+    }
+    .info__top {
+        flex-direction: column;
+        width: 200px;
+    }
+    .info__contact-information {
+        width: 200px;
+    }
+    .info__navigation {
+        flex-direction: column;
+        margin-top: 18px;
+        width: 170px;
+    }
+    .info__content {
+        margin-top: 16px;
+        width: 160px;
+    }
+    .info__content ul {
+        display: none;
+    }
+    .info__bottom {
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: baseline;
+        width: 200px;
+    }
+    .info__social {
+        margin-top: 40px;
+        width: 288px;
+    }
+    .info__social p {
+        width: 288px;
+    }
+    .info__social:nth-child(3) {
+        margin-top: 20px;
+    }
+    .info__links {
+        margin-top: 40px;
+    }
 }
 @media (max-width: 761px) {
     .up-header__opening-hours {
         display: none;
     }
     .categories__cells {
-        justify-content: space-between;
-        max-width: 761px;
-        width: 100%;
+        max-width: 716px;
+        height: 247px;
+        display: flex;
+        overflow-x: hidden;
     }
+    .categories__cells a {
+        width: 228px;
+        min-width: 228px;
+    }
+
     .achievements {
         display: flex;
         flex-direction: column;
@@ -699,7 +1332,120 @@ main {
     .about-company {
         padding: 80px 0px 0px 20px;
     }
-}
+    .products__cells {
+        justify-content: space-around;
+    }
+    .products__block {
+        width: 136px;
+        height: 280px;
+        padding-bottom: 19px;   
+    }
+    .products__cell__info {
+        width: 134px;
+        height: 111px;
+    }
+    .products__cell__actions {
+        margin-top: 8px;
+        padding: 0px 2px;
+    }
+    .products__block h3 {
+        width: 132px;
+        height: 63px;
+        margin: 8px 2px;
+    }
+    .products__block span {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .products__cell__actions button {
+        width: 132px;
+        height: 40px;
+    }
+    .products__cell__actions a {
+        display: none;
+    }
+    .products__lines {
+        margin-left: 30px;
+    }
+    .products__title h2 {
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    .news__blocks {
+        justify-content: space-around;
+    }
+    .news__block {
+        width: 136px;
+        height: 239px;
+    }
+    .news__block img {
+        height: 88px;
+    }
+    .news__block p {
+        margin-top: 8px;
+        margin-left: 4px;
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .news__block h3 {
+        padding: 2px 5px 24px 4px;
+        font-size: 16px;
+        line-height:17.6px;
+    }
+    .news__block a {
+        margin-left: 4px;
+    }
+    .news__block span {
+        font-size: 16px;
+        line-height:17.6px;
+        margin-right: 8px;
+    }
+    .news__car-brands {
+        height: 52px;
+    }
+    .feedback__input-field {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 21px;
+    }
+    .feedback {
+        max-height: 461px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback__input-name {
+        align-items: baseline;
+    }
+    .feedback__input-number {
+        align-items: baseline;
+    }
+    .feedback__panel {
+        align-items: center;
+    }
+    .feedback__panel span {
+        text-align: center;
+    }
+    .feedback__panel {
+        padding-top: 31px;
+        margin-bottom: 52px;
+    }
+    .feedback__panel p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .feedback__panel h2 {
+        text-align: center;
+        width: 245px;
+        height: 28px;
+        font-size: 24px;
+        line-height:28.8px;
+    }
+    .feedback__input-field button {
+        margin-top: 11px;
+        width: 260px;
+    }
+}       
 @media (max-width: 700px) {
     .about-company__text-info p {
         font-weight: 400;
@@ -708,6 +1454,9 @@ main {
         margin-top: 22px;
         width: 100%;
         padding-right: 20px;
+    }
+    .about-company {
+        align-items: center;
     }
 }
 @media (max-width: 621px) {
@@ -743,6 +1492,44 @@ main {
         font-size: 28px;
         line-height: 33.6px;
     }
+    .production__presentation img {
+        width: 312px;
+        height: 311px;
+    }
+    .production__presentation{
+        display: flex;
+        flex-direction: column;
+    }
+    .production__paragraph a {
+        position: unset;
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+    .production__paragraph {
+        display: flex;
+        flex-direction: column;
+    }
+    .production__paragraph p {
+        width: 279px;
+    }
+    .categories__lines button {
+        display: none;
+    }
+    .products__lines button {
+        display: none;
+    }
+    .news__lines button {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .products__cells > :nth-child(3) {
+        display: none;
+    }
+    .news__blocks > :nth-child(3) {
+        display: none;
+    }
+    
 }
 @media (max-width: 432px) {
     .banner__buttom {
@@ -751,6 +1538,7 @@ main {
     .banner__buttom :nth-child(2) {
         margin: 6px 0px 0px 0px;
     }
+
 }
 @media (max-width: 351px) {
     .banner__info p {
