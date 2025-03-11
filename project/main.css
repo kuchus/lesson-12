@@ -21,6 +21,9 @@ a:hover {
     color:rgb(197, 211, 211); text-decoration:none;
 }
 
+
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -78,6 +81,7 @@ header {
 }
 .up-header__connection a {
     margin-left: 24px;
+    cursor: pointer;
 }
 .up-header__phone-numbers {
     display: flex;
@@ -106,6 +110,7 @@ header {
     font-size: 16px;
     line-height: 20.8px;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 .up-header__opening-hours img {
     width: 12px;
@@ -133,6 +138,7 @@ header {
 }
 .dowp-header__navigations a {
     border: none;
+    cursor: pointer;
 }
 .dowp-header__navigations img {
     width: 138px;
@@ -153,6 +159,7 @@ header {
     font-size: 16px;
     line-height: 20.8px;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 .dowp-header__navigations-panels img {
     width: 12px;
@@ -175,6 +182,9 @@ header {
     height: 100%;
     border-radius: 40px;
     border: 1px solid rgba(254, 200, 11, 1);
+    outline: none;
+    padding-left: 7px;
+    padding-right: 45px;
     
 }
 .dowp-header__search button {
@@ -184,6 +194,7 @@ header {
     border: none;
     background-color: rgba(255, 255, 255);
     font-size: 26px;
+    cursor: pointer;
 }
 .dowp-header__panel a {
     cursor: pointer;
@@ -243,7 +254,7 @@ main {
     max-width: 454px;
     display: flex;
 }
-.banner__buttom :nth-child(1) {
+.banner__buttom > :nth-child(1) {
     width: 185px;
     height: 44px;
     font-family: "Fira Sans", serif;
@@ -254,8 +265,9 @@ main {
     border-radius: 4px;
     border: none;
     background-color: rgba(254, 200, 11, 1);
+    cursor: pointer;
 }
-.banner__buttom :nth-child(2) {
+.banner__buttom > :nth-child(2) {
     margin-left: 16px;
     width: 185px;
     height: 44px;
@@ -268,11 +280,146 @@ main {
     border: 2px solid rgba(254, 200, 11, 1);
     background-color: transparent;
     transition: 0.3s;
+    cursor: pointer;
 }
-.banner__buttom :nth-child(2):hover {
+.banner__buttom > :nth-child(2):hover {
     background-color: rgba(254, 200, 11, 1);
     color: rgba(0, 0, 0, 1);
     
+}
+
+.banner__order-call {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.banner__call {
+    width: 471px;
+    height: 568px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+.banner__call i {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 26px;
+    margin-top: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+.banner__call h2 {
+    margin-top: 28px;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+.banner__call p {
+    margin: 8px 19px 53px 20px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+.banner__name {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+}
+.banner__name span {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.banner__name input {
+    margin-top: 4px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid rgba(161, 161, 161, 1);
+    padding-left: 13px;
+    outline: none;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+.banner__number {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    margin-top: 25px;
+}
+.banner__number span {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(0, 0, 0, 1);
+}
+.banner__number input {
+    margin-top: 4px;
+    height: 44px;
+    border: 1px solid rgba(161, 161, 161, 1);
+    padding-left: 13px;
+    outline: none;
+    border-radius: 4px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+.banner__checkbox {
+    display: flex;
+    margin-top: 25px;
+    padding: 0px 94px 0px 80px;
+}
+.banner__checkbox input {
+    width: 24px;
+    height: 24px;
+}
+.banner__checkbox p {
+    width: 261px;
+    margin: 0px 0px 0px 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: rgba(161, 161, 161, 1);
+    text-align: left;
+}
+.banner__call button {
+    margin-top: 56px;
+    width: 313px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgba(254, 200, 11, 1);
+    border: none;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.6px;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.banner__call button:hover {
+    background-color: rgba(255, 212, 58, 1);
+
 }
 
 .categories {
@@ -315,6 +462,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .categories__lines i {
     font-size: 24px;
@@ -413,6 +561,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .about-company__text-info button:hover {
     background-color: rgba(255, 212, 58, 1);
@@ -606,6 +755,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .products__lines i {
     font-size: 24px;
@@ -662,6 +812,7 @@ main {
 }
 .products__cell__actual i {
     font-size: 30px;
+    cursor: pointer;
 }
 .products__cell__actual img {
     width: 79px;
@@ -685,6 +836,7 @@ main {
     font-size: 16px;
     line-height: 17.6px;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 .products__cell__actions a {
     width: 122px;
@@ -747,6 +899,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .news__lines i {
     font-size: 24px;
@@ -938,6 +1091,7 @@ main {
     width: 185px;
     height: 44px;
     background-color: rgba(254, 200, 11, 1);
+    cursor: pointer;
 }
 .feedback__input-field button:hover {
     background-color: rgba(255, 212, 58, 1);
@@ -986,6 +1140,7 @@ footer {
     font-size: 16px;
     line-height: 17.6px;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 .info__navigation {
     display: flex;
@@ -1008,6 +1163,7 @@ footer {
 .info__content li {
     margin-top: 13px;
     list-style-type: none;
+    cursor: pointer;
 }
 .info__bottom {
     margin-top: 31px;
@@ -1035,6 +1191,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
 
 @media (max-width: 1442px) {
     .feedback__image {
@@ -1274,7 +1431,7 @@ footer {
     }
     .info__bottom {
         margin-top: 40px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: baseline;
         width: 200px;
     }
